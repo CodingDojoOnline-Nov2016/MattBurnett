@@ -1,0 +1,15 @@
+
+body {
+  width: 970px;
+  margin: 0px auto;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1 {
+  color: red;
+}
+
+h3 {
+  color: yellow;
+}
