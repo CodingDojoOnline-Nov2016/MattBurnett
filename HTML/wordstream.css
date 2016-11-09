@@ -1,0 +1,256 @@
+* {
+  font-family: sans-serif, verdana;
+
+}
+
+.container {
+  height: 1270px;
+  width: 1070px;
+  background-color: white;
+  margin: 0px auto;
+
+}
+
+.nav{
+	display: inline-block;
+	background: linear-gradient(white,lightgrey);
+	border: solid;
+	border-width: 1px;
+	border-color: lightgrey;
+  vertical-align: top;
+  margin-left: 550px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 12px;
+}
+
+.nav ul {
+  list-style-type: none;
+  display: inline-block;
+  font-size: 10px;
+}
+
+.button {
+  color: white;
+  border-radius: 5px;
+  background-color: #3ab5ff;
+  margin-top: 5px;
+  width: 60px;
+  height: 30px;
+}
+
+#wordStream {
+  padding-top: 20px;
+  padding-left: 10px;
+  display: block;
+}
+
+h1 {
+  background-color: #147abe;
+  height: 50px;
+  color: white;
+  font-weight: normal;
+  padding-left: 15px;
+  padding-top: 15px;
+}
+
+#home img {
+  background-color: transparent;
+  padding-left: 350px;
+  display: inline-block;
+}
+#home {
+  display: inline-block;
+}
+
+#ppcLink {
+  display: inline-block;
+  padding-bottom: 5px;
+
+}
+
+#phone {
+  padding-left: 300px;
+}
+
+#contactInfo {
+  display: inline-block;
+  padding: auto;
+}
+#contactInfo p {
+  font-size: 12px;
+  color: #767e83;
+}
+#contactInfo h3 {
+  color: #2eaff7;
+  padding: 0px 0px 0px 0px;
+  margin: auto;
+}
+#leftTop {
+  display: inline-block;
+  margin-left: 5px;
+  width: 350px;
+  padding-bottom: 20px;
+}
+#leftTop h3 {
+  color: #2eaff7;
+}
+#leftTop p {
+  font-size: 12px;
+}
+    #driveMore {
+        color: #f89f20;
+        font-weight: bold;
+}
+    .demoButton {
+    background: linear-gradient(#2fa0e5,#157cc6);
+    font-weight: bold;
+    color: white;
+    border-radius: 5px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+    .trialButton {
+    background: linear-gradient(#f89f20,#e34900);
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 15px 55px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+}
+#adLeft {
+  display: inline-block;
+  margin-left: 5px;
+  background-image: url("file:///C:/Users/Matthew/Desktop/MattBurnett/left_content_ad1.png");
+  padding-bottom: 100px;
+  padding-left: 50px;
+  padding-right: 30px;
+}
+
+#adLeft p {
+    font-size: 12px;
+    color: grey;
+    font-weight: bolder;
+}
+#adLeft h3 {
+  color: #5694b8;
+  font-size: 20px;
+}
+.adText {
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+}
+.gradedButton {
+background: linear-gradient(#2474b6,#0e344e);
+font-weight: bold;
+border: none;
+border-radius: 5px;
+color: white;
+padding: 10px 10px;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+font-size: 16px;
+}
+#mainContent {
+  display: inline-block;
+  width: 650px;
+}
+#mainContent h3 {
+  color: #5694b8;
+}
+#mainContent p {
+  font-size: 14px;
+
+}
+#mainContent ul {
+  font-size: 14px;
+  list-style-type: square;
+  margin-bottom: 50px;
+}
+
+#middleContent {
+  font-size: 14px;
+  display: inline-block;
+  width: 650px;
+  vertical-align: top;
+
+
+}
+#middleContent h3 {
+  display: inline-block;
+  color:#5694b8;
+  margin-top: 50px;
+  vertical-align: top;
+
+}
+#boxStuff {
+  border: 5px solid;
+  border-color: #87bade;
+  margin-left: 50px;
+  margin-top: 0px;
+}
+#boxText {
+  width: 550px;
+  display: inline-block;
+}
+
+#flag {
+  display: inline-block;
+
+}
+#outOfBoxText {
+  display: inline-block;
+  font-size: 14px;
+  width: 650px;
+  vertical-align: top;
+  margin-left: 50px;
+}
+.startButton {
+  background: linear-gradient(#c3da64,#94b601);
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  padding: 15px 55px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 0px auto;
+
+}
+
+#bottomText {
+  display: inline-block;
+  font-size: 14px;
+  width: 650px;
+  vertical-align: top;
+  margin-left: 350px;
+}
+#bottomText h5 {
+  color: #5694b8;
+  font-size: 16px;
+}
+#bottomText p {
+  font-size: 14px;
+
+}
