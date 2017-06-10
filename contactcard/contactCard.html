@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>contact card</title>
+          <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+            <script type="text/javascript">
+                $(document).ready(function(){
+                    console.log("working")
+
+                    $("form").submit(function(e){
+                      e.preventDefault()
+                      var fields = {
+                        "firstName": $('#first-name').val(),
+                        "lastName": $('#last-name').val(),
+                        "description": $('#description').val()
+                      }
+                          var $ele = $('<div></div>')
+                          $ele.html("<h2>" + fields.firstName + " " + fields.lastName + "</h2><p>"+fields.description + "</p>")
+                          $(".cards").append($ele)
+                        // return false
+                    })
+
+                    $("div.cards").on("click", "h2", function(){
+                        $(this).siblings().toggle("slow")
+                    })
+                })
+
+            </script>
+                    <style media="screen">
+                            *{
+                              font-family: arial;
+                              margin: 0;
+                              padding: 0;
+                            }
+
+                            form {
+                              width: 25%;
+                              padding: 20px;
+                            }
+
+                              form input, form textarea {
+                                margin-bottom: 10px;
+                                width: 100%;
+                              }
+
+                            div.cards {
+                              width: 50%;
+                              display: inline-block;
+                              vertical-align: top;
+                              outline: 1px solid grey;
+                            }
+                            div.cards p {
+                              display: none;
+
+                            }
+
+                            div.cards div {
+                              height: 200px;
+                              background-color: silver;
+                              margin: 10px 0;
+                            }
+
+                                div.cards div h2 {
+                                    text-align: center;
+                                    padding: 5px;
+
+                                }
+                    </style>
+    </head>
+    <body>
+        <form action="" method="post">
+            <input type="text" id="first-name" name="first_name" value="" placeholder="First Name">
+            <input type="text" id="last-name" name="last_name" value="" placeholder="Last Name">
+            <textarea name="description" id="description" rows="8" cols="40" placeholder="Enter a description of yourself here!"></textarea>
+            <input type="submit" value="Add User">
+
+        </form>
+        <div class="cards"
+        </div>
+    </body>
+
+</html>

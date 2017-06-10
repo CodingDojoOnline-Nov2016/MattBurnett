@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+    <meta charset="utf-8">
+    <title>My First Angular Page</title>
+    <script src="/angular/angular.js"></script>
+    <script type="/angular-route/angular-route.js"></script>
+    <script type="text/javascript"></script>
+    <script type="text/javascript">
+      var app = angular.module('app', ['ngRoute']);
+      app.config(function($routeProvider){
+        $routeProvider
+        .when('/animals/:id', {
+          templateUrl: 'clent/partials/animals/_show.html',
+          controller: 'animalsController'
+        })
+        .otherwise('/');
+      })
+      app.controller('animalsController', ['$scope', '$routeParams', function($scope){
+        $scope.animals = ['bear', 'tiger', {eats_people: ''}, {
+          $scope.animals = [{
+            type: 'Bear',
+            eatsPeople: true,
+            legs: 4
+          },
+          {
+            type: 'Fish',
+            eatsPeople: false,
+            legs: 0
+          },
+          {
+            type: 'Zebra',
+            eatsPeople: false,
+            legs: 4
+          }
+        }];
+
+        $scope.getAnimal = function() {
+          console.log($routeParams);
+          $scope.animal = $scope.animals[$routeParams.id];
+        }
+      }])
+    </script>
+  </head>
+  <body>
+    <p ng-hide="true">Angular is not working</p>
+    <table ng-controller="animalsController">
+      <thead><th>Animal</th><th>Eats People?</th><th>Number of legs</th></thead>
+    <tbody>
+      <tr ng-repeat="animal in animals">
+        <td><a href="/animals/{{ $index }}">{{ animal.type }}</a></td>
+        <td><a href="/animals/{{ $index }}">{{ animal.eatsPeople }}</a></td>
+        <td><a href="/animals/{{ $index }}">{{ animal.legs }}</a></td>
+      </tr>
+    </tbody>
+  </table>
+    <main>
+      <div>
+        {{ name }}
+      </div>
+    </main>
+  </body>
+</html>

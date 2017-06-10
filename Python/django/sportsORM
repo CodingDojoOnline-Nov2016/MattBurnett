@@ -1,0 +1,18 @@
+#10 "teams": Team.objects.filter(team_name__istartswith='T'),
+#11 "teams": Team.objects.orderby('location'),
+#12 "teams": Team.objects.orderby('-team_name'),
+#13 "players": Player.objects.filter(last_name__icontains='cooper'),
+#14 "players": Player.objects.filter(first_name__icontains='joshua'),
+#15 "players": Player.objects.filter(first_name__icontains='joshua').exclude(last_name__icontains='cooper'),
+#16 "players": Player.objects.filter(first_name__icontains='alexander') | (first_name__icontains='alexander'),
+
+
+LVL 2
+#1
+#2 "players":Player.objects.filter(curr_team__team_name__icontains='penguins').filter(curr_team__location='boston'),
+#3 "players": Player.objects.filter(curr_team__league__sport__icontains='baseball')
+#4 "players": Player.objects.filter(curr_team__league__sport__icontains='baseball').filter(curr_team__league__name__icontains='International Collegiate'),
+#5 "players": Player.objects.filter(curr_team__league__name__icontains='American Conference').filter(last_name__)
+#6 "players": Player.objects.filter(curr_team_league_sport__icontains='football'),
+#7 "teams": Team.objects.filter(curr_players__firstname__icontains='Sophia'),
+#8 "players": Player.objects.filter(last_name__icontains='flores').exclude(curr_team__team_name__icontains='roughriders'),
